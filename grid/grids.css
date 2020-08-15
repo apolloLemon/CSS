@@ -1,7 +1,13 @@
 .grid_12 {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(auto-fill,250px);
+	grid-template-rows: repeat(auto-fill,125px);
+}
+
+.grid_24 {
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-template-rows: repeat(auto-fill,25px);
 }
 
 .grid_6 {
@@ -13,5 +19,11 @@
 @media only screen and (max-width: 768px) {
 	.rsz_6-768 {
 		grid-template-columns: repeat(6, 1fr);
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.rsz_12min1000 {
+		grid-template-columns: repeat(12, 1fr);
 	}
 }
